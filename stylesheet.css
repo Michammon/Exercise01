@@ -1,0 +1,123 @@
+.post {
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 600px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+        color: #333;
+        margin: 5px;
+    }
+
+    p {
+        margin: 5px 0;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    .show-full {
+        .visible-text {
+            display: none;
+        }
+    
+        .hidden-text {
+            display: inline;
+        }
+    }
+
+    button {
+        padding: 8px;
+        background-color: #db344a;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: #b61b30;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    
+        button {
+            padding: 8px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+    
+            &:hover,
+            &.read-more {
+                color: #60acdf;
+                background-color: #2980b9;
+            }
+        }
+    }
+
+    .post-body {
+        p {
+            flex-grow: 1;
+            margin: 5px 0;
+            overflow: hidden;
+
+            .visible-text {
+                overflow: hidden;
+                display: inline;
+            }
+
+            .hidden-text {
+                overflow: visible;
+                display: none;
+            }
+        }
+    }
+    .read-more {
+        text-align: center;
+        padding: 10px;
+        color: #186192;
+        cursor: pointer;
+        display: block;
+    
+        &:hover {
+            color: #851159;
+            transform: scale(1.02);
+        }
+    }
+
+}
+
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+
+    button {
+        margin: 0 5px;
+        padding: 8px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #2980b9;
+        }
+    }
+}
+
+#pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
